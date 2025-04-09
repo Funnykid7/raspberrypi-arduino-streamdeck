@@ -10,7 +10,7 @@ This project allows you to map button presses on an Arduino to various actions o
 * **Executing Key Sequences (Macros):** Perform complex multi-key actions like copy/paste (Ctrl+C -> Ctrl+V) with optional delays.
 * **Opening Websites:** Quickly launch your favorite URLs.
 
-![Diagram Placeholder - Maybe add an image/Fritzing diagram later]
+
 
 ## Hardware Requirements
 
