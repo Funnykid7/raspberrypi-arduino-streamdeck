@@ -24,6 +24,8 @@ This project allows you to map button presses on an Arduino to various actions o
 ## Software Requirements
 
 * Raspberry Pi OS (or a similar Linux distribution)
+* OS must be running on X11 display server, not     
+  Wayland
 * Python 3
 * Arduino IDE (Installed on any computer to upload the sketch to the Arduino)
 * Required Python Libraries: `pyserial`, `pynput`
