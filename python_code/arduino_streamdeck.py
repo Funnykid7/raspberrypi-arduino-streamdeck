@@ -1,4 +1,4 @@
-# Python script for Raspberry Pi to emulate a Stream Deck using an Arduino
+# Python script for both ARM64 and 64-bit Linux machines to emulate a Stream Deck using an Arduino
 # Reads button signals ('U/u', 'L/l', 'D/d', 'R/r') via Serial
 # Performs actions defined in a JSON config file (key press, commands, text, macros, URLs)
 
