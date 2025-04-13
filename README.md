@@ -1,8 +1,8 @@
-# Raspberry Pi Arduino Stream Deck
+# Linux Arduino Stream Deck
 
-Turn a simple Arduino Uno with four buttons into a customizable macro pad / Stream Deck emulator for your Raspberry Pi!
+Turn a simple Arduino Uno with four buttons into a customizable macro pad / Stream Deck emulator for your ARM64 or 64-bit Linux machine!
 
-This project allows you to map button presses on an Arduino to various actions on your Raspberry Pi, including:
+This project allows you to map button presses on an Arduino to various actions on your Linux Machine, including:
 
 * **Simulating Key Presses:** Act as any keyboard key (e.g., Arrow keys, WASD, modifiers like Shift/Ctrl). Supports press-and-hold.
 * **Running Shell Commands:** Launch applications, run scripts, or execute any command line instruction.
@@ -14,7 +14,7 @@ This project allows you to map button presses on an Arduino to various actions o
 
 ## Hardware Requirements
 
-* Raspberry Pi (Tested on Pi 5, should work on older models with sufficient performance)
+* ARM64 or 64-bit Linux machine (Tested on Raspberry Pi 5)
 * Arduino Uno R3 (or compatible board like Nano, etc.)
 * 4 x Push Buttons (Tactile Switches)
 * Breadboard
@@ -23,9 +23,8 @@ This project allows you to map button presses on an Arduino to various actions o
 
 ## Software Requirements
 
-* Raspberry Pi OS (or a similar Linux distribution)
-* OS must be running on X11 display server, not     
-  Wayland
+* Ubuntu/Raspberry PI OS (or a similar Linux distribution)
+* OS must be running on *X11* display server, not *Wayland*
 * Python 3
 * Arduino IDE (Installed on any computer to upload the sketch to the Arduino)
 * Required Python Libraries: `pyserial`, `pynput`
@@ -43,7 +42,7 @@ This project allows you to map button presses on an Arduino to various actions o
 4.  *(Internal pull-up resistors are used in the Arduino code, so no external resistors are needed for the buttons).*
 
 ## Software Setup
-1. **Change OS Display Server:** Change display server from **Wayland** to **X11** through the `sudo raspi-config` commmand.
+1. **Change OS Display Server:** Change display server from **Wayland** to **X11**.
 2. **File Location:** Save both the *Python* script and the *JSON* setup file in the same directory.
 3. **Edit Button bindings:** To edit the *JSON* config file, open a new terminal window, `cd` to the directory where your scripts are saved. Then type `nano arduino_streamdeck_config.json` and hit enter. Make your desired changes and save the file.
 4. **Program Exectution:** Open a new terminal window and `cd` to the directory where you scripts are saved. To run the *Python* file, type `sudo python3 arduino_streamdeck.py` and hit enter. **WARNING** do not close this terminal window, only minimize it.
