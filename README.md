@@ -43,6 +43,7 @@ This project allows you to map button presses on an Arduino to various actions o
 4.  *(Internal pull-up resistors are used in the Arduino code, so no external resistors are needed for the buttons).*
 
 ## Software Setup
-1. **File Location:** Save both the Python script and the JSON setup file in the same directory.
-2. **Edit Button bindings:** To edit the JSON config file, open a new terminal window, `cd` to the directory where your scripts are saved. Then type `nano arduino_streamdeck_config.json` and hit enter. Make your desired changes and save the file.
-3. **Program Exectution:** Open a new terminal window and `cd` to the directory where you scripts are saved. To run the python file type `sudo python3 arduino_streamdeck.py` and hit enter. **WARNING** do not close this terminal window, only minimize it.
+1. **Change OS Display Server:** Change display server from **Wayland** to **X11** through the `sudo raspi-config` commmand.
+2. **File Location:** Save both the *Python* script and the *JSON* setup file in the same directory.
+3. **Edit Button bindings:** To edit the *JSON* config file, open a new terminal window, `cd` to the directory where your scripts are saved. Then type `nano arduino_streamdeck_config.json` and hit enter. Make your desired changes and save the file.
+4. **Program Exectution:** Open a new terminal window and `cd` to the directory where you scripts are saved. To run the *Python* file, type `sudo python3 arduino_streamdeck.py` and hit enter. **WARNING** do not close this terminal window, only minimize it.
